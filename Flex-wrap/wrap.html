@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wrap</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            margin: 0;
+            height: calc(100vh - 20px);
+            width: calc(100vw - 20px);
+            border: 10px solid blue;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .container>.img_blocks {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+        .img_blocks img {
+            margin: 5px;
+            height: 120px;
+            width: auto;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="img_blocks">
+            <img src="imagenes/1.jpg" alt="">
+            <img src="imagenes/2.jpg" alt="">
+            <img src="imagenes/3.jpg" alt="">
+            <img src="imagenes/4.jpg" alt="">
+            <img src="imagenes/5.jpg" alt="">
+            <img src="imagenes/6.jpg" alt="">
+        </div>
+    </div>
+</body>
+</html>
